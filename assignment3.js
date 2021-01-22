@@ -1,3 +1,5 @@
+// https://github.com/RazaulHaqueSubho/javascript-assignment
+
 //Task1
 function kilometerToMeter(kilometer) { // works with any type of number such as int, float, decimal etc.
     if (isNaN(kilometer) || kilometer < 0) { // if kilometer is not a number or less than 0 then it will print the below
@@ -16,7 +18,7 @@ console.log("Result1 =" + result1)
 
 function budgetCalculator(noOfWatch, noOfPhone, noOfLaptop) {
 
-    if (noOfWatch < 0 || noOfPhone < 0 || noOfLaptop < 0 || isNaN(noOfWatch,noOfWatch,noOfLaptop)) { // checking if the amount is less than 0 as it can never be negative
+    if (noOfWatch < 0 || noOfPhone < 0 || noOfLaptop < 0 || isNaN(noOfWatch, noOfWatch, noOfLaptop)) { // checking if the amount is less than 0 as it can never be negative
         return "Invalid Input"
     }
     else {
@@ -64,16 +66,16 @@ console.log("Result3 = " + result3);
 
 //Task4
 function megaFriend(nameArray) {
-        var maxLength = "";
-        for (i = 0; i < nameArray.length; i++) { // looping through index 0 to nameArray.length, increase i by 1 on each loop;
-            if (nameArray[i].length > maxLength.length) { // checking current array index element is larger than maxLength ;
-                maxLength = nameArray[i]; // placing the current largest name word to maxLength;
-            }
+    var maxLength = "";
+    for (i = 0; i < nameArray.length; i++) { // looping through index 0 to nameArray.length, increase i by 1 on each loop;
+        if (nameArray[i].length > maxLength.length) { // checking current array index element is larger than maxLength ;
+            maxLength = nameArray[i]; // placing the current largest name word to maxLength;
         }
-        return maxLength;
     }
+    return maxLength;
+}
 
-var names = ["abstract", "pcysicholochirm", "CarryonJeeves", "Telepathy", "Noobscoop", "Dockerlearnerteacheswith"];
+var names = ["abstract", "pcysicholochirm", "CarryonJeeves", "Telepathy", "Noobscoop", "Dockerlearnerteacheswith", "asfdasdfasdfasdfasdfasdf"];
 var LongestName = megaFriend(names);
 console.log("Result4= " + LongestName);
 
