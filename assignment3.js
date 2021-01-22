@@ -16,7 +16,7 @@ console.log("Result1 =" + result1)
 
 function budgetCalculator(noOfWatch, noOfPhone, noOfLaptop) {
 
-    if (noOfWatch < 0 || noOfPhone < 0 || noOfLaptop < 0) { // checking if the amount is less than 0 as it can never be negative
+    if (noOfWatch < 0 || noOfPhone < 0 || noOfLaptop < 0 || isNaN(noOfWatch,noOfWatch,noOfLaptop)) { // checking if the amount is less than 0 as it can never be negative
         return "Invalid Input"
     }
     else {
@@ -28,7 +28,8 @@ function budgetCalculator(noOfWatch, noOfPhone, noOfLaptop) {
     return totalCost;
 }
 
-var result2 = budgetCalculator(41, 84, 34);
+// var result2 = budgetCalculator("a", 84, 34);
+var result2 = budgetCalculator(66, 84, 34);
 console.log("Result2 =" + result2);
 
 //Task3
